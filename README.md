@@ -17,6 +17,21 @@ vietfin serve
 
 Ứng dụng nghe ở cổng 8000 trên loopback. API được mô tả tại đường dẫn `/docs` của server. Không mở ứng dụng này ra Internet: chưa có tài khoản, phân quyền hay bảo mật đa người dùng. Cloud onboarding không hỗ trợ đường dẫn preview loopback.
 
+### Windows 10/11 (PowerShell)
+
+Giải nén repository, mở thư mục chứa `requirements.lock`, bấm thanh địa chỉ File Explorer, nhập `powershell` rồi Enter. Nếu thiếu Python 3.12, dùng `py install 3.12` với Python install manager, hoặc cài Python 3.12 từ python.org. Sau đó chạy từng lệnh:
+
+```powershell
+py -3.12 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install --require-hashes -r requirements.lock
+.\.venv\Scripts\python.exe -m pip install -e . --no-deps
+.\.venv\Scripts\vietfin.exe serve
+```
+
+Giữ PowerShell mở, mở trình duyệt trên cùng máy tại địa chỉ loopback cổng 8000 hiển thị trong log. Ctrl+C để dừng. Không cần kích hoạt môi trường bằng Activate.ps1. OCR trên Windows cần cài riêng Tesseract và model tiếng Việt, cấu hình `VIETFIN_TESSDATA` nếu dùng thư mục model riêng.
+
+File khóa được tạo bằng `uv pip compile pyproject.toml --extra dev --universal --constraint requirements.lock --generate-hashes -o requirements.lock` để bao gồm dependency theo nền tảng (đặc biệt `tzdata`, `colorama` trên Windows) và giữ phiên bản đã khóa. Không bỏ `--require-hashes` khi gặp lỗi thiếu gói trong lock; dùng bản lock đã sửa. Phân giải dependency Windows được kiểm tra từ Linux; chưa kiểm chứng thực thi toàn bộ ứng dụng trên máy Windows thật.
+
 Trong môi trường cloud hiện tại:
 
 ```bash
