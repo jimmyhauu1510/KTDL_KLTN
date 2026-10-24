@@ -1,0 +1,108 @@
+﻿ID,Nhóm,Mức,Canonical English,Biến thể Tiếng Việt,Biến thể khác / viết tắt,Nguồn,Ghi chú
+KW001,AI,CORE,Artificial intelligence,trí tuệ nhân tạo,AI,P1-Appendix2 / P2-Fig2,AI chỉ khớp khi viết hoa và đúng ngữ cảnh công nghệ
+KW002,AI,CONTEXT,Business intelligence,trí tuệ doanh nghiệp; trí tuệ kinh doanh,BI,P1-Appendix2 / P2-Fig2,BI cần xác nhận ngữ cảnh
+KW003,AI,CONTEXT,Image understanding,hiểu hình ảnh; phân tích hình ảnh thông minh,,P1-Appendix2 / P2-Fig2,Cần văn cảnh AI
+KW004,AI,CONTEXT,Investment decision assistance system,hệ thống hỗ trợ quyết định đầu tư,,P1-Appendix2 / P2-Fig2,Không tính câu chung về hỗ trợ ra quyết định
+KW005,AI,CORE,Intelligent data analysis,phân tích dữ liệu thông minh,,P1-Appendix2 / P2-Fig2,
+KW006,AI,CORE,Intelligent robot,rô-bốt thông minh; robot thông minh,,P1-Appendix2 / P2-Fig2,
+KW007,AI,CORE,Machine learning,học máy,ML,P1-Appendix2 / P2-Fig2,ML chỉ khớp khi viết hoa và đúng ngữ cảnh
+KW008,AI,CORE,Deep learning,học sâu,,P1-Appendix2 / P2-Fig2,
+KW009,AI,CORE,Semantic search,tìm kiếm ngữ nghĩa,,P1-Appendix2 / P2-Fig2,
+KW010,AI,CONTEXT,Biometrics,sinh trắc học,,P1-Appendix2 / P2-Fig2,Bỏ qua nhắc đến sinh trắc học của bên thứ ba
+KW011,AI,CORE,Face recognition,nhận diện khuôn mặt; nhận dạng khuôn mặt,,P1-Appendix2 / P2-Fig2,
+KW012,AI,CORE,Voice recognition,nhận diện giọng nói; nhận dạng giọng nói,,P1-Appendix2 / P2-Fig2,
+KW013,AI,CONTEXT,Identity verification,xác thực danh tính; xác minh danh tính,,P1-Appendix2 / P2-Fig2,Loại trừ kiểm tra giấy tờ thông thường
+KW014,AI,CORE,Autonomous driving,lái xe tự động; xe tự hành,,P1-Appendix2 / P2-Fig2,
+KW015,AI,CORE,Natural language processing,xử lý ngôn ngữ tự nhiên,NLP,P1-Appendix2 / P2-Fig2,NLP phải khớp viết hoa/ngữ cảnh
+KW016,BLOCKCHAIN,CORE,Blockchain,chuỗi khối,,P1-Appendix2 / P2-Fig2,
+KW017,BLOCKCHAIN,CONTEXT,Digital currency,tiền kỹ thuật số; tiền mã hóa,,P1-Appendix2 / P2-Fig2,
+KW018,BLOCKCHAIN,CORE,Distributed computing,điện toán phân tán,,P1-Appendix2 / P2-Fig2,
+KW019,BLOCKCHAIN,CORE,Differential privacy,quyền riêng tư vi sai; riêng tư vi sai,,P1-Appendix2 / P2-Fig2,
+KW020,BLOCKCHAIN,CORE,Smart financial contract,hợp đồng tài chính thông minh; hợp đồng thông minh,smart contract,P1-Appendix2 / P2-Fig2,Dịch thuật điều chỉnh từ intelligent financial contracts
+KW021,CLOUD_IOT,CORE,Cloud computing,điện toán đám mây,cloud computing,P1-Appendix2 / P2-Fig2,Không tính riêng từ cloud
+KW022,CLOUD_IOT,CORE,Stream computing,điện toán luồng; xử lý luồng,,P1-Appendix2 / P2-Fig2,
+KW023,CLOUD_IOT,CORE,Graph computing,điện toán đồ thị,,P1-Appendix2 / P2-Fig2,
+KW024,CLOUD_IOT,CORE,In-memory computing,điện toán trong bộ nhớ,,P1-Appendix2 / P2-Fig2,
+KW025,CLOUD_IOT,CORE,Secure multiparty computation,tính toán đa bên an toàn; tính toán đa bên bảo mật,,P1-Appendix2 / P2-Fig2,
+KW026,CLOUD_IOT,CORE,Brain-like computing,điện toán mô phỏng não,,P1-Appendix2 / P2-Fig2,
+KW027,CLOUD_IOT,CONTEXT,Green computing,điện toán xanh,,P1-Appendix2 / P2-Fig2,
+KW028,CLOUD_IOT,CORE,Cognitive computing,điện toán nhận thức,,P1-Appendix2 / P2-Fig2,
+KW029,CLOUD_IOT,CONTEXT,Fusion architecture,kiến trúc hội tụ,,P1-Appendix2 / P2-Fig2,
+KW030,CLOUD_IOT,CONTEXT,Billion-level concurrency,xử lý đồng thời quy mô tỷ,,P1-Appendix2 / P2-Fig2,
+KW031,CLOUD_IOT,CONTEXT,Exabyte-level storage,lưu trữ exabyte,,P1-Appendix2 / P2-Fig2,
+KW032,CLOUD_IOT,CORE,Internet of things,internet vạn vật; internet kết nối vạn vật,IoT,P1-Appendix2 / P2-Fig2,IoT chỉ khớp viết hoa và đúng ngữ cảnh
+KW033,CLOUD_IOT,CONTEXT,Cyber-physical systems,hệ thống vật lý không gian mạng; hệ thống không gian mạng vật lý,CPS,P1-Appendix2 / P2-Fig2,
+KW034,BIG_DATA,CORE,Big data,dữ liệu lớn,,P1-Appendix2 / P2-Fig2,
+KW035,BIG_DATA,CORE,Data mining,khai phá dữ liệu,,P1-Appendix2 / P2-Fig2,
+KW036,BIG_DATA,CORE,Text mining,khai phá văn bản,,P1-Appendix2 / P2-Fig2,
+KW037,BIG_DATA,CONTEXT,Data visualization,trực quan hóa dữ liệu,,P1-Appendix2 / P2-Fig2,
+KW038,BIG_DATA,CONTEXT,Heterogeneous data,dữ liệu không đồng nhất,,P1-Appendix2 / P2-Fig2,
+KW039,BIG_DATA,CONTEXT,Credit reporting,báo cáo tín dụng,,P1-Appendix2 / P2-Fig2,
+KW040,BIG_DATA,CORE,Augmented reality,thực tế tăng cường,AR,P1-Appendix2 / P2-Fig2,P1 dùng enhancement reality; chuẩn hóa augmented reality theo P2
+KW041,BIG_DATA,CORE,Mixed reality,thực tế hỗn hợp,MR,P1-Appendix2 / P2-Fig2,
+KW042,BIG_DATA,CORE,Virtual reality,thực tế ảo,VR,P1-Appendix2 / P2-Fig2,
+KW043,APPLICATION,CONTEXT,Mobile internet,internet di động,,P1-Appendix2 / P2-Fig2,
+KW044,APPLICATION,CORE,Industrial internet,internet công nghiệp,IIoT,P1-Appendix2 / P2-Fig2,
+KW045,APPLICATION,CONTEXT,Mobile network,mạng di động,,P1-Appendix2 / P2-Fig2,
+KW046,APPLICATION,CONTEXT,Internet medical care,y tế trực tuyến; y tế số,,P1-Appendix2 / P2-Fig2,
+KW047,APPLICATION,CONTEXT,Electronic commerce,thương mại điện tử,e-commerce,P1-Appendix2 / P2-Fig2,
+KW048,APPLICATION,CONTEXT,Mobile payment,thanh toán di động,,P1-Appendix2 / P2-Fig2,
+KW049,APPLICATION,CONTEXT,Third-party payment,thanh toán qua bên thứ ba,,P1-Appendix2 / P2-Fig2,
+KW050,APPLICATION,CONTEXT,NFC payment,thanh toán nfc,NFC,P1-Appendix2 / P2-Fig2,
+KW051,APPLICATION,CONTEXT,Smart energy,năng lượng thông minh,,P1-Appendix2 / P2-Fig2,
+KW052,APPLICATION,CONTEXT,B2B,kinh doanh doanh nghiệp với doanh nghiệp,,P1-Appendix2 / P2-Fig2,B2B là mô hình giao dịch; chỉ tính khi gắn ứng dụng số
+KW053,APPLICATION,CONTEXT,B2C,kinh doanh doanh nghiệp với người tiêu dùng,,P1-Appendix2 / P2-Fig2,
+KW054,APPLICATION,CONTEXT,C2B,kinh doanh người tiêu dùng với doanh nghiệp,,P1-Appendix2 / P2-Fig2,
+KW055,APPLICATION,CONTEXT,C2C,giao dịch giữa người tiêu dùng,,P1-Appendix2 / P2-Fig2,
+KW056,APPLICATION,CONTEXT,O2O,trực tuyến đến ngoại tuyến,,P1-Appendix2 / P2-Fig2,
+KW057,APPLICATION,CONTEXT,Network connection,kết nối mạng,,P1-Appendix2 / P2-Fig2,
+KW058,APPLICATION,CORE,Smart wearable,thiết bị đeo thông minh,,P1-Appendix2 / P2-Fig2,
+KW059,APPLICATION,CONTEXT,Smart agriculture,nông nghiệp thông minh,,P1-Appendix2 / P2-Fig2,
+KW060,APPLICATION,CONTEXT,Smart transportation,giao thông thông minh,,P1-Appendix2 / P2-Fig2,
+KW061,APPLICATION,CONTEXT,Smart healthcare,chăm sóc y tế thông minh,,P1-Appendix2 / P2-Fig2,
+KW062,APPLICATION,CONTEXT,Intelligent customer service,chăm sóc khách hàng thông minh,,P1-Appendix2 / P2-Fig2,
+KW063,APPLICATION,CORE,Smart home,nhà thông minh,,P1-Appendix2 / P2-Fig2,
+KW064,APPLICATION,CONTEXT,Intelligent investment advisory,tư vấn đầu tư thông minh,,P1-Appendix2 / P2-Fig2,
+KW065,APPLICATION,CONTEXT,Smart tourism,du lịch thông minh,,P1-Appendix2 / P2-Fig2,
+KW066,APPLICATION,CONTEXT,Smart environmental protection,bảo vệ môi trường thông minh,,P1-Appendix2 / P2-Fig2,
+KW067,APPLICATION,CORE,Smart grid,lưới điện thông minh,,P1-Appendix2 / P2-Fig2,
+KW068,APPLICATION,CONTEXT,Intelligent marketing,tiếp thị thông minh,,P1-Appendix2 / P2-Fig2,
+KW069,APPLICATION,CONTEXT,Digital marketing,tiếp thị số; marketing số,,P1-Appendix2 / P2-Fig2,
+KW070,APPLICATION,CORE,Unmanned retail,bán lẻ không người,,P1-Appendix2 / P2-Fig2,
+KW071,APPLICATION,CONTEXT,Internet finance,tài chính trực tuyến,,P1-Appendix2 / P2-Fig2,
+KW072,APPLICATION,CONTEXT,Digital finance,tài chính số,,P1-Appendix2 / P2-Fig2,
+KW073,APPLICATION,CONTEXT,Fintech,công nghệ tài chính,,P1-Appendix2 / P2-Fig2,
+KW074,APPLICATION,CONTEXT,Quantitative finance,tài chính định lượng,,P1-Appendix2 / P2-Fig2,
+KW075,APPLICATION,CONTEXT,Open banking,ngân hàng mở,,P1-Appendix2 / P2-Fig2,
+KW076,DT_DIRECT,CORE,Digital transformation,chuyển đổi số; chuyển đổi kỹ thuật số,corporate digital transformation; digital transformation,P2 / P3 / P4 / P5,Trực tiếp biểu thị khái niệm nghiên cứu
+KW077,DT_DIRECT,CONTEXT,Digitization,số hóa; số hoá,digitalization; digitalisation,P4 / protocol adaptation,Bỏ số hóa hồ sơ đơn lẻ không liên quan chuyển đổi hoạt động
+KW078,DT_DIRECT,CORE,Digital platform,nền tảng số; nền tảng kỹ thuật số,digital platform,Protocol adaptation from P1-P5,Không tính từ nền tảng đứng riêng
+KW079,DT_DIRECT,CORE,Digital ecosystem,hệ sinh thái số,digital ecosystem,Protocol adaptation from P1-P5,
+KW080,DT_DIRECT,CORE,Process digitalization,số hóa quy trình; số hoá quy trình,process digitalization; process digitization,Protocol adaptation from P1-P5,
+KW081,DT_DIRECT,CORE,Robotic process automation,tự động hóa quy trình bằng robot; tự động hóa quy trình robot,RPA,Protocol adaptation,RPA chỉ nhận diện khi viết hoa và đúng ngữ cảnh
+KW082,DT_DIRECT,CONTEXT,Electronic invoice,hóa đơn điện tử,e-invoice,Protocol adaptation,Chỉ tính khi nói đến triển khai hệ thống nghiệp vụ số
+KW083,DT_DIRECT,CORE,Digital business model,mô hình kinh doanh số,digital business model,P1 conceptual / protocol adaptation,
+KW084,DT_DIRECT,CONTEXT,Digital operating system,hệ thống vận hành số,digital operating system,Protocol adaptation,
+KW085,DT_DIRECT,CONTEXT,Data-driven management,quản trị dựa trên dữ liệu; điều hành dựa trên dữ liệu,data-driven management,Protocol adaptation,
+KW086,TECH_ONLY,TECH_ONLY,Information technology,công nghệ thông tin,IT; ICT,P4 uses as DT word; strict rule TECH only,P4 uses as DT word; strict rule TECH only
+KW087,TECH_ONLY,TECH_ONLY,Software,phần mềm,software,P8 / protocol,P8 / protocol
+KW088,TECH_ONLY,TECH_ONLY,Hardware,phần cứng,hardware,protocol,protocol
+KW089,TECH_ONLY,TECH_ONLY,Telecommunications,viễn thông,telecommunications,protocol,protocol
+KW090,TECH_ONLY,TECH_ONLY,Information system,hệ thống thông tin,information system,protocol,protocol
+KW091,TECH_ONLY,TECH_ONLY,Computer network,mạng máy tính,computer network,protocol,protocol
+KW092,TECH_ONLY,TECH_ONLY,Server,máy chủ,server,protocol,protocol
+KW093,TECH_ONLY,TECH_ONLY,Database,cơ sở dữ liệu,database,protocol,protocol
+KW094,TECH_ONLY,TECH_ONLY,Data center,trung tâm dữ liệu,data center,protocol,protocol
+KW095,TECH_ONLY,TECH_ONLY,Website,trang web; website,website,protocol,protocol
+KW096,TECH_ONLY,TECH_ONLY,Digital device,thiết bị số,digital device,protocol,protocol
+KW097,TECH_ONLY,TECH_ONLY,Cybersecurity,an ninh mạng; an toàn thông tin,cybersecurity; information security,protocol,protocol
+KW098,TECH_ONLY,TECH_ONLY,Network infrastructure,hạ tầng mạng,network infrastructure,protocol,protocol
+KW099,TECH_ONLY,TECH_ONLY,Internet,internet,internet,protocol,protocol
+KW100,TECH_ONLY,TECH_ONLY,Enterprise resource planning,hoạch định nguồn lực doanh nghiệp,ERP,protocol,protocol
+KW101,TECH_ONLY,TECH_ONLY,Customer relationship management,quản trị quan hệ khách hàng,CRM,protocol,protocol
+KW102,TECH_ONLY,TECH_ONLY,Mobile application,ứng dụng di động,mobile application,protocol,protocol
+KW103,TECH_ONLY,TECH_ONLY,Technology,công nghệ,technology,protocol,protocol
+KW104,TECH_ONLY,TECH_ONLY,Automated system,hệ thống tự động,automated system,protocol,protocol
+KW105,TECH_ONLY,TECH_ONLY,Computer,máy tính,computer,protocol,protocol
+KW106,TECH_ONLY,TECH_ONLY,5G network,mạng 5g,5G,protocol,protocol
+KW107,TECH_ONLY,TECH_ONLY,Information infrastructure,hạ tầng thông tin,information infrastructure,protocol,protocol

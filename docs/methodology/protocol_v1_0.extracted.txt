@@ -1,0 +1,120 @@
+BỘ QUY TẮC CHUẨN HÓA DỮ LIỆU
+Phân tích công nghệ và chuyển đổi số trong Báo cáo thường niên, 2016–2025
+Phiên bản: PROTOCOL V1.0 + DICTIONARY V1.0  •  Trạng thái: KHÓA PHƯƠNG PHÁP TRƯỚC KHAI THÁC  •  Cơ sở: 11 bài nghiên cứu P0–P10
+1. Phạm vi, mục tiêu và cách diễn giải
+Đơn vị nghiên cứu là doanh nghiệp–năm tài chính (firm-year). Mục tiêu là tạo tập số liệu có thể kiểm toán về (i) tổng số từ, (ii) cường độ đề cập công nghệ, (iii) cường độ đề cập chuyển đổi số được lọc từ công nghệ, và (iv) bằng chứng triển khai nội bộ. Không đồng nhất nhắc đến công nghệ với mức độ chuyển đổi số thực tế.
+Chỉ số chính phản ánh mức độ công bố liên quan đến chuyển đổi số (DT disclosure). Chỉ số triển khai nội bộ (DT implementation) là biến bổ trợ định tính–định lượng, yêu cầu xác định chủ thể hành động và tình trạng triển khai.
+2. Căn cứ nguồn và phân công vai trò nghiên cứu
+Tài liệu đo DT (P1–P5, P9)
+P1 Appendix 2 trình bày 5 nhóm từ; P2 Fig. 2 và mục Core explanatory variable trình bày nhóm công nghệ/ứng dụng, xử lý phủ định và thông tin bên thứ ba; P3 & P5 dùng ln(1+tần suất); P4 dùng word segmentation và tần suất BCTN Việt Nam; P9 đo biến giả có/không.
+Tài liệu nền khác (P0, P6–P8, P10)
+P6, P7, P0 và P10 làm cơ sở cho quản trị lợi nhuận AEM/REM, không được gán là nguồn từ điển chuyển đổi số. P8 cung cấp nền tảng về kinh tế số và giảm chi phí thông tin.
+3. Danh mục quy tắc bắt buộc
+R01  Đơn vị phân tích. 01 mã doanh nghiệp × 01 năm tài chính, 2016–2025. BCTN 2025 được gán 2025 dù công bố năm 2026. Chưa có PDF hợp lệ -> NA, không gán bằng 0.
+R02  Thứ tự nguồn. BCTN chính thức của doanh nghiệp > hồ sơ trên hệ thống công bố thông tin chứng khoán > bản sao đối chiếu; lưu đường dẫn, ngày tải, tệp gốc và SHA-256.
+R03  Một bản chuẩn. Chỉ một bản BCTN chuẩn/doanh nghiệp-năm; báo cáo hợp nhất/bổ sung/đính chính chọn phiên bản chính thức mới nhất, ghi nhận lịch sử thay đổi; không cộng nhiều PDF trùng.
+R04  Hai phạm vi đếm. FULL là văn bản nội dung hợp lệ trong BCTN: loại bìa, mục lục, đầu/chân trang lặp, quảng cáo ngoài báo cáo, trang trống, tệp đính kèm trùng. Giữ nội dung thuyết minh và báo cáo tài chính. NARRATIVE là phân tích độ nhạy: trừ báo cáo tài chính/ý kiến kiểm toán/nhãn bảng số; không thay FULL tùy từng năm.
+R05  Đọc PDF. Giữ số trang PDF và số trang in; trích xuất theo thứ tự cột; chỉ OCR các trang ảnh/không đọc được, soát lỗi ký tự và lỗi cắt từ; lưu log trang bất thường.
+R06  Chuẩn hóa Unicode. Unicode NFC; chuẩn khoảng trắng, dấu nối và ký tự điều khiển; chuẩn dấu Việt và dấu nháy. Giữ nguyên bản gốc, bản chuẩn hóa và ánh xạ vị trí ký tự/số trang.
+R07  Đếm tổng số từ. Đếm từ vựng sau tách từ tiếng Việt (ví dụ chuyển_đổi, dữ_liệu), tách token tiếng Anh; tách số/ký hiệu thuần khỏi mẫu số. Không đếm ký tự, không đếm âm tiết bằng cách tách dấu cách đơn giản.
+R08  Cấu trúc từ điển. Mỗi khái niệm có ID bất biến, dạng chuẩn Anh/Việt, biến thể, nhóm chủ đề và ngưỡng xét. DT nằm trong tập TECH. Nhóm DT: AI, BLOCKCHAIN, CLOUD_IOT, BIG_DATA, APPLICATION, DT_DIRECT.
+R09  Hai mức chọn từ. CORE: cụm có tính đặc hiệu số cao. CONTEXT: chỉ tính DT khi câu/đoạn thể hiện công nghệ số/ứng dụng kinh doanh rõ ràng. TECH_ONLY: chỉ tính TECH, không vào DT chính.
+R10  Từ viết tắt. Các viết tắt AI/BI/ML/NLP/IoT/AR/MR/VR/ERP/CRM/RPA/IT chỉ khớp chữ hoa và ranh giới từ; ngữ cảnh kiểm tra khi đa nghĩa. Không tự đổi "ai" thành AI.
+R11  Ưu tiên cụm dài. Khớp trên văn bản đã chuẩn hóa bằng ranh giới từ, không dùng substring. Nếu các chuỗi phủ nhau, chọn khớp dài nhất; mỗi đoạn ký tự chỉ phân bổ một khái niệm; không lặp giữa bản Việt-Anh trong cùng cụm.
+R12  Đếm theo khái niệm. Dạng đồng nghĩa cùng ID là một từ khóa khác nhau. Số lượt xuất hiện đếm mỗi occurrence hợp lệ, không phải số loại. TECH_FREQ là số lượt trong hợp tất cả ID TECH, không phải TECH_ONLY + DT đếm đôi.
+R13  Chủ thể. D0: đề cập gốc; D1 disclosure của doanh nghiệp (tự triển khai, cung cấp giải pháp, kế hoạch) sau loại bên thứ ba; D2 nội bộ đã triển khai. Gắn C1 nội bộ, C2 sản phẩm/dịch vụ do công ty cung cấp, C3 kế hoạch, C4 bên thứ ba, C5 phủ định, C6 chung/chú giải.
+R14  Loại trừ ngữ cảnh. Loại C4–C6 khỏi DT_DISC_FREQ. C2–C3 vẫn ở mức công bố D1, KHÔNG đưa vào DT_IMPLEMENT_FREQ. C1 chỉ được gán khi có bằng chứng đang/đã vận hành ở doanh nghiệp.
+R15  Xử lý phủ định. Ví dụ "chưa triển khai AI", "không sử dụng điện toán đám mây" -> giữ RAW_FREQ nhưng không tính D1/D2; đánh dấu NEGATIVE, không xóa minh chứng.
+R16  Chống sai lệch ngành. Công ty bán giải pháp số: nhắc sản phẩm C2 được tính disclosure nhưng không coi là chuyển đổi số nội bộ. Từ "công nghệ thông tin", "phần mềm" dù P4 từng dùng ở DT chỉ thuộc TECH_ONLY trong chỉ số chính.
+R17  Chỉ số chính. DT_INDEX = LN(1+DT_DISC_FREQ), trong đó DT_DISC_FREQ chỉ tính match nhóm CORE/CONTEXT hợp lệ C1–C3. Đây là chỉ số công bố CĐS, không khẳng định triển khai thực tế.
+R18  Chuẩn hóa độ dài. DT_PER_10000 = 10000×DT_DISC_FREQ/TOTAL_WORDS_FULL; TECH_PER_10000 tương tự. Nếu tổng từ bằng 0 hoặc file lỗi -> NA.
+R19  Chỉ số bổ trợ. TECH_FREQ; TECH_UNIQUE; DT_UNIQUE; DT_RAW_FREQ; DT_IMPLEMENT_FREQ; DT_IMPLEMENT_INDEX=LN(1+DT_IMPLEMENT_FREQ); DT_BROAD_FREQ = DT_DISC_FREQ + lượt hợp lệ riêng KW086 (công nghệ thông tin/information technology, chủ thể C1–C3) theo P4; không thêm TECH_ONLY khác. DIGITAL_DUMMY=1 khi DT_IMPLEMENT_FREQ>0.
+R20  Chia nhóm. Một match chỉ thuộc một nhóm cụ thể; tổng DT_FREQ bằng tổng lượt của các nhóm. Số khái niệm unique ở cấp tổng được tính theo ID, tránh cộng hai nhóm chồng nhau.
+R21  Kiểm tra thủ công. Mỗi BCTN: xem mọi trang cảnh báo OCR, ít nhất 5 trang có nội dung (đầu/giữa/cuối/bốc ngẫu nhiên), và ít nhất 30 occurrence DT hoặc tất cả nếu ít hơn 30; kiểm tra thêm 20 đoạn không có hit để dò bỏ sót.
+R22  Ngưỡng QA nội bộ. Trên mẫu gán nhãn độc lập: precision ≥95%, recall ≥90%, độ lệch số từ giữa hai phép đếm độc lập ≤2%; không đạt thì đánh dấu REVIEW và sửa pipeline trước khi phát hành. Đây là ngưỡng đề xuất của nghiên cứu, không phải ngưỡng trong 11 bài.
+R23  Kết quả bắt buộc. Lưu cấp report-year, cấp keyword-year, cấp occurrence (ID, trang, đoạn trích, status, quyết định), bảng OCR/QA và provenance; không ẩn NA hay sửa dữ liệu bằng suy đoán.
+R24  Khóa quy tắc. Đóng băng version Protocol V1.0 và Dictionary V1.0 trước thu thập; mọi bổ sung phát hiện sau này thành V1.1/V2.0, phải chạy lại TOÀN BỘ doanh nghiệp–năm, giữ change log.
+4. Công thức chính
+TECH_FREQ(i,t) = số lượt xuất hiện hợp lệ trong hợp các khái niệm TECH theo báo cáo–năm.
+DT_DISC_FREQ(i,t) = số lượt từ khóa DT có trạng thái CORE/CONTEXT hợp lệ, thuộc C1 + C2 + C3.
+DT_IMPLEMENT_FREQ(i,t) = số lượt từ khóa DT thuộc C1, có bằng chứng triển khai nội bộ.
+DT_INDEX(i,t) = ln[1 + DT_DISC_FREQ(i,t)].
+DT_IMPLEMENT_INDEX(i,t) = ln[1 + DT_IMPLEMENT_FREQ(i,t)].
+DT_PER_10000(i,t) = 10.000 × DT_DISC_FREQ(i,t) / TOTAL_WORDS_FULL(i,t).
+TECH_PER_10000(i,t) = 10.000 × TECH_FREQ(i,t) / TOTAL_WORDS_FULL(i,t).
+DT_TECH_SHARE(i,t) = DT_DISC_FREQ(i,t) / TECH_FREQ(i,t), NA nếu TECH_FREQ = 0.
+5. Phạm vi công nghệ/DT và tính toán từ điển
+Các nhãn từ điển: AI, BLOCKCHAIN, CLOUD_IOT, BIG_DATA, APPLICATION, DT_DIRECT và TECH_ONLY. Từ điển có các mức CORE, CONTEXT, TECH_ONLY. Các cụm tiếng Anh ở P1 Appendix 2 / P2 Fig. 2 là cơ sở; bản dịch, nhóm nội dung mở rộng và quy tắc lọc CORE/CONTEXT là lựa chọn vận hành của nghiên cứu này, không được trình bày như bản sao nguyên văn của tác giả.
+Tổng số khái niệm hiện hành: 107. Số khái niệm DT: 85 (CORE: 39; CONTEXT: 46). Chỉ TECH_ONLY: 22. Toàn bộ danh mục, biến thể, nguồn và ghi chú nằm trong tệp Excel đi kèm.
+6. Quy tắc ví dụ để kiểm toán ngữ cảnh
+Mã
+Bối cảnh minh họa
+Quyết định
+C1
+FPT đã triển khai AI trong quản trị tuyển dụng
+D1 và D2
+C2
+FPT cung cấp nền tảng AI cho ngân hàng
+D1, không D2
+C3
+FPT đặt mục tiêu tích hợp AI năm tới
+D1, không D2
+C4
+Khách hàng đang tự triển khai AI của bên khác
+Loại D1 và D2
+C5
+FPT chưa sử dụng AI trong quản trị
+Loại D1 và D2; lưu RAW
+C6
+AI là xu hướng phát triển chung của nền kinh tế
+Loại D1 và D2; lưu RAW
+ACR
+ai / Ai viết thường là đại từ tiếng Việt
+Không khớp AI
+OVERLAP
+công nghệ trí tuệ nhân tạo
+Một match cho Artificial intelligence; thuật ngữ "công nghệ" không đếm cùng ký tự
+Lưu ý: Những ví dụ này chỉ minh họa nhãn, không phải câu trích thực tế từ báo cáo FPT.
+7. Tiêu chuẩn kiểm soát và bàn giao dữ liệu
+Một bản ghi occurrence tối thiểu có: ticker, fiscal_year, file_hash, scope, page_pdf, page_print, sentence, keyword_id, matched_variant, normalized_span, context_status, reviewer, evidence_excerpt. Một bản ghi report-year tối thiểu có mã, năm, nguồn, trạng thái, tổng từ, counts và các chỉ số. Ghi đầy đủ lỗi OCR / tệp thiếu / lý do loại.
+Quy trình kiểm định từ điển: review toàn bộ nhãn mơ hồ, kiểm thử thủ công mẫu, precision/recall theo R22, đối chiếu biến thể 2 ngôn ngữ. Mọi lần đổi từ điển được đánh số phiên bản mới và tái chạy toàn bộ mẫu 2016–2025.
+8. Điều khoản khóa bộ quy tắc
+Kể từ khi sử dụng phiên bản V1.0 để tính BCTN, không được thêm hoặc xóa từ chỉ cho một công ty hoặc một năm. Nếu có bằng chứng cần sửa, tạo version mới, công bố lý do, ngày hiệu lực và xử lý lại toàn bộ dữ liệu. Các kết quả chưa kiểm chứng được ghi NA/REVIEW, tuyệt đối không điền 0 thay thế.
+Phụ lục A. Bảng đối chiếu 11 nghiên cứu
+Mã
+Tài liệu
+Vai trò
+P0
+Naz & Sheikh (2023) — Capital structure and earnings management: evidence from Pakistan
+Nền AEM/REM, kiểm soát, không làm nguồn từ điển DT
+P1
+Lou et al. (2024) — Does corporate digitalisation moderate real earnings management?
+5 nhóm từ; Appendix 2 trích Wu et al. (2021); log tổng tần suất
+P2
+Wang & Hou (2024) — The impact of digital transformation and earnings management on ESG performance
+5 chiều, 76 thuật ngữ theo bài; loại phủ định/bên thứ ba; log
+P3
+Xia (2024) — Research on the Impact of Digital Transformation on Corporate Earnings Management
+5 nhóm và LN(1+x) tần suất
+P4
+Vo et al. (2024) — Corporate restructuring and firm performance in Vietnam: The moderating role of digital transformation
+Tần suất BCTN Việt Nam, word segmentation/word embedding, kiểm tra từ khóa
+P5
+Yolanda & Mita (2025) — Can Digital Transformation and Governance Control Managerial Opportunistic Behavior in Earnings Management?
+Từ điển theo nguồn nghiên cứu + đọc BCTN, NVivo, LN(1+x)
+P6
+Roychowdhury (2006) — Earnings management through real activities manipulation
+REM; không cung cấp đo lường DT
+P7
+Kothari, Leone & Wasley (2005) — Performance matched discretionary accrual measures
+AEM performance-matched; không cung cấp từ điển DT
+P8
+Goldfarb & Tucker (2019) — Digital Economics
+Lý thuyết kinh tế số; không phải danh sách từ khóa thực nghiệm
+P9
+Chen et al. (2024) — Gimmick or revolution: can corporate digital transformation improve accounting information quality?
+ABCD và biến giả sử dụng CDT; không dùng thay chỉ số tần suất chính
+P10
+Tran, Tran & Phan (2022) — Corporate social responsibility and earning management: Evidence from listed Vietnamese companies
+AEM/REM tại Việt Nam; không phải nguồn từ khóa DT
+Dẫn chứng có thể tra: P1 tr. 9 và Appendix 2 tr. 36; P2 tr. 5, Hình 2; P3 tr. 5; P4 tr. 5–6; P5 tr. 7–8; P9 tr. 6. Phương pháp từ khóa DT không suy diễn từ P6/P7.

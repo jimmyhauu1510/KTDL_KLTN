@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vietfin-dtminer"
+version = "0.1.0"
+description = "Evidence-first Vietnamese annual-report text mining and research audit"
+requires-python = ">=3.12"
+dependencies = ["fastapi", "uvicorn", "python-multipart", "pymupdf", "pdfplumber", "underthesea", "pandas", "pyarrow", "openpyxl", "pytesseract", "pillow", "httpx", "python-dateutil>=2.9,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+vietfin = "vietfin.cli:main"
+
+[tool.setuptools.package-data]
+vietfin = ["static/*"]
+
+[tool.setuptools.packages.find]
+include = ["vietfin*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

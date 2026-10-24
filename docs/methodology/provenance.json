@@ -1,0 +1,33 @@
+{
+  "recorded_date": "2026-10-24",
+  "documents": [
+    {
+      "file": "quy_trinh_chuan_hoa_DT_BCTN_v1_0.docx",
+      "bytes": 44224,
+      "sha256": "6bba5ee07d9dc02fb2145afd32bf6edfeecf15f949f2ed4548afa8ef54724bf4"
+    },
+    {
+      "file": "bo_quy_tac_DT_BCTN_v1_0.xlsx",
+      "bytes": 21873,
+      "sha256": "aad2ba84edd6fb2b712ea895a99d5115b9d9a0f7eb397d286acfafd876e8966e"
+    }
+  ],
+  "rule_count": 24,
+  "rule_texts_agree_between_docx_xlsx": true,
+  "concept_count": 107,
+  "categories": {
+    "CORE": 39,
+    "CONTEXT": 46,
+    "TECH_ONLY": 22
+  },
+  "sheets": [
+    "01_QuyTac",
+    "02_TuDien",
+    "03_ChiSo",
+    "04_Nguon",
+    "05_ViDu_QA",
+    "06_KetQuaMau"
+  ],
+  "runtime_imported": false,
+  "note": "Bản CSV chỉ trích nguyên tám cột gốc, không phải schema nhập ứng dụng; không thêm biến thể."
+}
